@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-    crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
     <!-- Header Start -->
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logo.webp" alt="Logo" width="30" height="24"
-                        class="d-inline-block align-text-top">
+                    <img src="images/logo.webp" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                     Mobile Shopee
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,23 +45,239 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="photo.html">Photo Gallery</a></li>
                                 <li><a class="dropdown-item" href="video.html">Video Gallery</a></li>
-                                
+
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
-                    
+
                 </div>
             </div>
         </nav>
     </header>
     <!-- Header End -->
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-     crossorigin="anonymous"></script>
+    <!-- Main Section Start -->
+    <main>
+        <!-- Product Section Start -->
+        <section class="bg-secondary border-top border-warning">
+            <div class="container pb-5">
+                <div class="row">
+                    <h2 class="p-3">Our Products</h2>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/crown.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Vivo</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card’s
+                                    content.</p>
+                                <!-- <a href="products.html" class="btn btn-warning">View Products</a> -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#vivo">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/leaf.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Oppo</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card’s
+                                    content.</p>
+                                <!-- <a href="products.html" class="btn btn-warning">View Products</a> -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#oppo">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/flag.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Samsung</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card’s
+                                    content.</p>
+                                <!-- <a href="products.html" class="btn btn-warning">View Products</a> -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#samsung">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/lion.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Apple</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card’s
+                                    content.</p>
+                                <!-- <a href="products.html" class="btn btn-warning">View Products</a> -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#apple">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Section End -->
+    </main>
+    <!-- Main Section End -->
+
+    <!--Vivo Modal -->
+    <div class="modal fade" id="vivo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Vivo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="conainer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/offer.webp" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    Vivo is a global smartphone manufacturer known for offering a wide range of Android phones
+                                     — from flagship camera-focused devices and performance-oriented series (like X and V) to 
+                                     affordable 5G models in the Y and T series. Their phones often feature large batteries,
+                                     fast charging, high-refresh-rate displays, and camera systems co-engineered with optics partners like ZEISS.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vivo Modal End -->
+
+    <!--Oppo Modal -->
+    <div class="modal fade" id="oppo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-xl">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Oppo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="conainer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/mission.webp" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                   OPPO is a well-known smartphone manufacturer offering phones across budget, mid-range,
+                                   and premium categories. Their devices often focus on camera capabilities, fast charging,
+                                   sleek design, and ColorOS software features. 
+                                   India is one of OPPO’s key markets, with frequent model launches tailored to local preferences
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Oppo Modal End -->
+
+    <!--Samsung Modal Start-->
+    <div class="modal fade" id="samsung" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-xl">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Samsung</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="conainer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/logo.webp" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                  Many Samsung phones now support 6 years of Android and security updates —
+                                  a strong longevity feature.
+                                  Samsung’s One UI offers Galaxy AI enhancements like object removal, 
+                                  image editing tools, and productivity boosts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Samsung Modal End -->
+
+    <!--Apple Modal Start-->
+    <div class="modal fade" id="apple" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-xl">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Apple</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="conainer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/lion.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                  Apple Inc. is a leading US tech company best known for its premium iPhones, iPads, Macs,
+                                   Apple Watches, AirPods, and more. Its products are tightly integrated across software (iOS, macOS, watchOS) 
+                                  and services (Apple Music, iCloud, Apple Pay, Apple Intelligence), offering a smooth user experience across devices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Apple Modal End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
